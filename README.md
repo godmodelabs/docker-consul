@@ -19,7 +19,7 @@ coreos:
           -v /var/local/consul:/var/local/consul \
           -v /etc/consul:/etc/consul:ro \
           -v /etc/ssl/certs:/etc/ssl/certs:ro \
-          -v /usr/share/ca-certificates:/usr/share/ca-certificates:ro 
+          -v /usr/share/ca-certificates:/usr/share/ca-certificates:ro \
           --net=host \
           godmodelabs/consul agent -config-dir=/etc/consul
         ExecStop=-/usr/bin/docker stop consul
