@@ -1,5 +1,5 @@
 # docker-consul
-A busybox:glibc based Docker container running HashiCorp's nomad on CoreOS instances.
+A busybox:glibc based Docker container running HashiCorp's consul on CoreOS instances.
 
 ## From cloud-config
 ```
