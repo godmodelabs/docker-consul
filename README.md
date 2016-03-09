@@ -1,4 +1,4 @@
-# docker-consul
+# docker-hashicorp-consul
 A busybox:glibc based Docker container running HashiCorp's consul on CoreOS instances.
 
 ## From cloud-config
@@ -21,6 +21,6 @@ coreos:
           -v /etc/ssl/certs:/etc/ssl/certs:ro \
           -v /usr/share/ca-certificates:/usr/share/ca-certificates:ro \
           --net=host \
-          godmodelabs/consul agent -config-dir=/etc/consul
+          godmodelabs/hashicorp-consul agent -config-dir=/etc/consul
         ExecStop=-/usr/bin/docker stop consul
 ```
