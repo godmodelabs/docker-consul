@@ -1,4 +1,4 @@
-FROM busybox:glibc
+FROM alpine:latest
 MAINTAINER it-operations@boerse-go.de
 ENV TOOL=consul \
     VERSION=0.6.4 \
