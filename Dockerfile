@@ -11,6 +11,6 @@ RUN echo "${SHA256}  ${TOOL}_${VERSION}_linux_amd64.zip" | sha256sum -cw &&\
     rm -r ${TOOL}_${VERSION}_linux_amd64.zip
 
 # additional software for health checks of services
-RUN apk --no-cache add curl
+RUN apk --no-cache add curl monitoring-plugins
 
 ENTRYPOINT ["/consul"]
