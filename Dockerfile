@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER it-operations@boerse-go.de
+LABEL maintainer="it-operations@boerse-go.de"
 ENV TOOL=consul \
     VERSION=1.2.3 \
     SHA256=f97996296ef3905c38c504b35035fb731d3cfd9cad129c9523402a4229c709c5
