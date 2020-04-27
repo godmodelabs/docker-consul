@@ -1,8 +1,8 @@
 FROM alpine:latest
 LABEL maintainer="it-operations@boerse-go.de"
 ENV TOOL=consul \
-    VERSION=1.6.5 \
-    SHA256=520dfb3a099a1e3832bcf25abb328e9e218a7b2f865c709f07f0ac09b953026e
+    VERSION=1.7.2 \
+    SHA256=5ab689cad175c08a226a5c41d16392bc7dd30ceaaf90788411542a756773e698
 
 # By using ADD there is no need to install wget or curl
 ADD https://releases.hashicorp.com/${TOOL}/${VERSION}/${TOOL}_${VERSION}_linux_amd64.zip ${TOOL}_${VERSION}_linux_amd64.zip
